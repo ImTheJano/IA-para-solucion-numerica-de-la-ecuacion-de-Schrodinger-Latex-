@@ -1,0 +1,55 @@
+%Numero de paginas en dvi =
+\documentclass[]{rmf-d}
+\usepackage{nopageno,rmfbib,multicol,times,epsf,amsmath,amssymb}
+\usepackage[latin1]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage[]{caption2}
+\usepackage{graphicx}
+\usepackage{float}
+
+\def\rmfcornisa{Informaci\'on cu\'antica \hfill\rmf\ {\bf 48} (6) ???--??? % Suponiendo Vol 48 num 6 y area ENSEÑANZA
+\hfill Marzo 2019}
+\newcommand{\ssc}{\scriptscriptstyle}
+
+\def\rmfcintilla{{\it Rev.\ Mex.\ F\'{\i}s.\/} {\bf 48} (6) (2003) ???--???}
+\clearpage \rmfcaptionstyle \pagestyle{myheadings}
+\setcounter{page}{1} \markboth{Alejandro.}
+{T\'itulo del trabajo}
+\begin{document}
+	\title{Inteligencia artificial para encontrar la soluci\'on num\'rica de la ecuaci\'on de Schr\"odinger
+	\vspace{-6pt}}
+
+	\author{Alejandro Grcía.}
+	\address{TNM\\
+		TESOEM}
+
+	%\author{Nombre del Autor}
+	%\address{Dependencia y direcci\'on}
+
+	\maketitle \recibido{ de  de }{ de  de \vspace{-12pt}} % Fecha de recibido y aceptado (ej. 3 de abril de 2002)
+
+	% En ingles va primero el abstract y luego el resumen
+
+	\begin{resumen}
+		\input{content/resumen}
+	\end{resumen}
+	\descript{ Incluir aqui los descriptores \vspace{-4pt}}
+	\begin{abstract}
+		\input{content/resumen}
+	\end{abstract}
+	\keys{Incluir aqui los Keywords \vspace{-4pt}} \pacs{Incluir aqui
+	los numeros PACS \vspace{-4pt}}
+	\begin{multicols}{2}
+		\section{Introducci\'on}
+			\input{content/sections/introduccion}
+		\section{Propuesta}
+			\input{content/sections/propuesta}
+	\end{multicols}
+	\medline
+	\begin{multicols}{2}
+		\begin{thebibliography}{99}
+		% Incluir Aqui la Bibliograf\'ia
+		\end{thebibliography}
+	\end{multicols}
+\end{document}
+%
